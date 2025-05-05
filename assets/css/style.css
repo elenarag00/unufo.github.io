@@ -1,0 +1,52 @@
+/* Sfondo scuro e reset base */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2E2E2E;  /* Gris profondo */
+  color: #39FF14;             /* Verde neon */ 
+  font-family: sans-serif;
+}
+
+/* Header centrato orizzontalmente */
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Titolo e sottotitolo */
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+h2 {
+  margin: 0.5rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+/* Layout principale: testo a sinistra, immagini a destra */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+}
+
+/* Colonna di testo in basso a sinistra */
+.content-left {
+  max-width: 40%;
+}
+.content-left p {
+  margin: 0.5rem 0;
+}
+
+/* Galleria immagini */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #39FF14;
+}
